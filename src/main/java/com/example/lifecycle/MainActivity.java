@@ -34,15 +34,6 @@ public class MainActivity extends AppCompatActivity {
         //buttonActivity2.setOnClickListener(gotoActivity2);
     }
 
-    private View.OnClickListener gotoActivity2 = new View.OnClickListener(){
-        @Override
-        public void onClick(View v){
-            Intent intent = new Intent();
-            intent.setClass(MainActivity.this , Activity2.class);
-            startActivity(intent);
-        }
-    };
-
     @Override
     protected void onStart() {
         Toast.makeText(this, "onStart MainActivity", Toast.LENGTH_SHORT).show();
